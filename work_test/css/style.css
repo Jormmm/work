@@ -342,6 +342,7 @@ td {
   font-size: clamp(6px, 1vw, 14px);
   font-weight: 500;
   color: #292D32;
+  padding: 0 2px;
 }
 
 tr {
