@@ -96,6 +96,17 @@ body {
   bottom: 2.5px;
   left: 199px;
 }
+.header__user-info {
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .header__user-info {
+    position: fixed;
+    left: 28px;
+    bottom: 76px;
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;

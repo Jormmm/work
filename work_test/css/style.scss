@@ -55,6 +55,12 @@
 		// .header__user-info
 
 		&__user-info {
+            cursor: pointer;
+            @media (min-width: 1024px) {
+                position: fixed;
+                left: 28px;
+                bottom: 76px;
+            }
 		}
 }
 .menu {
