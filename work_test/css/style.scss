@@ -1,0 +1,205 @@
+@import '_null';
+
+
+.header {
+    position: relative;
+    width: 306px;
+    background-color: #fff;
+    transition: 0.5s ease;
+    @media (max-width: 1024px) {
+        position: absolute;
+        top: 0;
+        left: -290px;
+    }
+		// .header__container
+
+        &__button {
+            @media (max-width: 1024px) {
+                position: absolute;
+                width: 30px;
+                height: 100vh;
+                background: #3030bf0f url(../img/touch.webp) no-repeat;
+                background-position: center;
+                background-size: contain;
+                top: 0;
+                right: -15px;
+                cursor: pointer;
+            }
+        }
+
+		&__container {
+            padding: 36px 28px 78px 28px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+		}
+
+		// .header__logo
+
+		&__logo {
+            position: relative;
+            margin: 0 0 53px 0;
+            &::after{
+                position: absolute;
+                content: '' url(../img/v.01.svg) ;
+                bottom: 2.5px;
+                left: 199px;
+            }
+		}
+
+		// .header__navbar
+
+		&__navbar {
+		}
+
+		// .header__user-info
+
+		&__user-info {
+		}
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+		// .menu__item
+
+		&__item {
+            position: relative;
+            margin: 0 0 18px 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: #9197B3;
+            padding: 11px 8px 11px 49px;
+            line-height: 24px;
+            border-radius: 8px;
+            &:not(:first-child)::after{
+                position: absolute;
+                content: '' url(../img/chevron-right\ 2.svg);
+                right: 11px;
+                top: 14px;
+            }
+            &:nth-child(1)::before {
+                position: absolute;
+                content: '' url(../img/key-square.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:nth-child(2)::before {
+                position: absolute;
+                content: '' url(../img/3d-square\ 1.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:nth-child(3)::before {
+                position: absolute;
+                content: '' url(../img/user-square\ 1.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:nth-child(4)::before {
+                position: absolute;
+                content: '' url(../img/wallet-money\ 2.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:nth-child(5)::before {
+                position: absolute;
+                content: '' url(../img/discount-shape\ 1.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:nth-child(6)::before {
+                position: absolute;
+                content: '' url(../img/message-question\ 1.svg);
+                left: 11px;
+                top: 11px;
+            }
+            &:hover{
+                background-color: #5932EA;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:not(:first-child):after{
+                    position: absolute;
+                    content: '' url(../img/chevron-right-white.svg);
+                    right: 11px;
+                    top: 14px;
+                }
+                &:nth-child(1)::before {
+                position: absolute;
+                content: '' url(../img/img-invert/key-square.svg);
+                left: 11px;
+                top: 11px;
+                }
+                &:nth-child(2)::before {
+                    position: absolute;
+                    content: '' url(../img/img-invert/3d-square\ 1.svg);
+                    left: 11px;
+                    top: 11px;
+                }
+                &:nth-child(3)::before {
+                    position: absolute;
+                    content: '' url(../img/img-invert/user-square\ 1.svg);
+                    left: 11px;
+                    top: 11px;
+                }
+                &:nth-child(4)::before {
+                    position: absolute;
+                    content: '' url(../img/img-invert/wallet-money\ 2.svg);
+                    left: 11px;
+                    top: 11px;
+                }
+                &:nth-child(5)::before {
+                    position: absolute;
+                    content: '' url(../img/img-invert/discount-shape\ 1.svg);
+                    left: 11px;
+                    top: 11px;
+                }
+                &:nth-child(6)::before {
+                    position: absolute;
+                    content: '' url(../img/img-invert/message-question\ 1.svg);
+                    left: 11px;
+                    top: 11px;
+                }
+            }
+		}
+}
+.info-user {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: auto;
+		// .info-user__avatar
+
+		&__avatar {
+		}
+
+		// .info-user__image
+
+		&__image {
+		}
+
+		// .info-user__name
+
+		&__name {
+		}
+}
+.name-info {
+
+		// .name-info__first-name
+
+		&__first-name {
+            font-size: 14px;
+            font-weight: 500;
+		}
+
+		// .name-info__noun
+
+		&__noun {
+            font-size: 12px;
+            color: #757575;
+		}
+}
+
+.active-header {
+        left: 0;
+}
