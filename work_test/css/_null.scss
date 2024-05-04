@@ -41,6 +41,7 @@ body{
 .wrapper{
    min-height: 100%;
    background-color: #FAFBFF;
+   width: 100vw;
    @media (min-width: 1024px) {
       display: flex;
    }
